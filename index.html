@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Responsive Design</title>
+    <meta name="description" content="responsive design, media query example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img class="logo" src="images/cartography-3244166.svg" />
+        <nav>
+          <ul id="menu-list">
+            <li><a href="">Collections</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Maps</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav>
+        <span
+          class="material-icons-outlined"
+          id="menu-icon"
+          aria-label="menu-icon"
+          onclick="togglemenu()"
+          >menu</span
+        >
+      </div>
+
+      <div class="row">
+        <div class="col-1">
+          <h2>
+            Earth's Moon <br />
+            Luna Selene
+          </h2>
+          <h3>Fifth Largest Moon in the Solar System</h3>
+          <p>Distance: 238,900 miles<br />Gravity: 1.62 m/s&sup2;</p>
+          <h4>$42.50</h4>
+          <button type="button">
+            Buy Now<span id="arrow" class="material-icons-outlined">
+              arrow_right_alt
+            </span>
+          </button>
+        </div>
+        <div class="col-2">
+          <img class="moon" src="./images/moon.png" />
+          <div class="color-box"></div>
+          <div class="add-btn">
+            <span
+              class="material-icons-outlined"
+              aria-label="add to cart button"
+            >
+              add
+            </span>
+            <p><small>Add to Cart</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <span class="material-icons-outlined" aria-label="social media link">
+          person
+        </span>
+        <span class="material-icons-outlined" aria-label="social media link">
+          photo_camera
+        </span>
+        <span class="material-icons-outlined" aria-label="favorite button">
+          favorite
+        </span>
+      </div>
+
+      <div class="footnote">
+        <span class="material-icons-two-tone" id="palette"> palette </span>
+        <span>Made by Sidney</span>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

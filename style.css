@@ -1,0 +1,256 @@
+/* Navigation */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+#menu-icon {
+  width: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #08016b;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: rgb(119, 119, 158);
+}
+
+/* Content */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+.col-1 h2 {
+  font-size: 40px;
+}
+
+.col-1 h3 {
+  font-size: 30px;
+  color: rgb(3, 19, 161);
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+
+.col-1 h4 {
+  font-size: 16px;
+  color: rgb(34, 6, 156);
+  font-weight: 100;
+}
+
+.col-1 h4 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+button {
+  width: 140px;
+  height: 48px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: white;
+  background: linear-gradient(to right, #08016b, #fa14fa);
+  border-radius: 6px;
+  cursor: pointer;
+  /* transition: [property] [duration] [timing-func] [delay]; */
+  transition: width 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+button span {
+  width: 30px;
+  display: none;
+  visibility: hidden;
+}
+
+button:hover span {
+  display: block;
+  visibility: visible;
+}
+
+button:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* a::after creates a pseudo-element that is the
+last child of the selected element. Often used to
+add cosmentic content to an element. Inline by default. */
+.col-1::after {
+  content: "";
+  width: 10px;
+  height: 57%;
+  background: linear-gradient(#08016b, #fa14fa);
+  /* we use absolute to specify offset (via top left bottom right)
+   from its containing area */
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+.col-2 .moon {
+  width: 70%;
+}
+
+.color-box {
+  /* absolute position of color box makes it 
+  appear as though it's permenantly a part of
+  the background. We adjust it's position with
+  transform: translateX(150px) */
+  position: absolute;
+  right: 0;
+  top: -40px;
+  background: linear-gradient(#08016b, #fa14fa);
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  width: 85%;
+  /* z-index -1 puts this behind img */
+  z-index: -1;
+  transform: translateX(150px);
+}
+
+.add-btn span {
+  font-size: 300%;
+  margin-bottom: 5px;
+}
+
+.add-btn {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.social-links span {
+  height: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.footnote {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  margin: 30px 0 10px 0;
+}
+
+.footnote #palette {
+  font-size: 20px;
+}
+
+/* made responsive with a media query */
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#000c7a, #5c5c5cc7);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: white;
+  }
+  #menu-icon {
+    display: block;
+    font-size: x-large;
+    margin-bottom: 30px;
+  }
+  #menu-list {
+    overflow: hidden;
+    /* transition between two states of an element.
+    Different states can be defined using
+    :hover :active or dynamically set via JavaScript */
+    transition: 0.5s;
+  }
+  .row {
+    /* this makes the two 'cols' stack */
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  .col-2 .moon {
+    /* minor adjustment on size of image for mobile */
+    width: 77%;
+  }
+  .color-box {
+    transform: translateX(75px);
+  }
+  .col-1 {
+    flex-basis: 100%;
+  }
+  .col-1 h2 {
+    font-size: 35px;
+  }
+  .col-1 h3 {
+    font-size: 15px;
+  }
+}
