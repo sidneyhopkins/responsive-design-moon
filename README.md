@@ -1,38 +1,29 @@
-# Responsive Design and Media Queries Example
+# Responsive Design Moon
 
-This project was created with HTML, CSS, and JavaScript.
+#### By Sidney Hopkins
 
-## About
+#### This is a responsively designed e-commerce page.
 
-This is a lighthearted webpage that uses media queries and responsive design principles to properly display an ecommerce page with the moon for sale on various device sizes. This webpage serves as an example of applied CSS concepts. If I learn new concepts in the future that would improve the design, I may make changes. I have commented notes throughout the code as a guide for myself and others.
+## Technologies Used
 
-## CSS
+HTML, CSS, JavaScript
 
-- **Flexbox**
+## Description
 
-- **Linear-gradient**
+This application is a single-page, responsively designed e-commerce website. It contains a dynamic menu that toggles open/close for mobile and expands for desktop. The focus of this project was learning advanced CSS.
 
-  The **background** color transitions according to the function.
-  I also used the **to right** property with linear-gradient on the button element.
+## How to view
 
-- **Transition**
+- Clone this repository to your desktop
+- Use a live server to see the page:
+  - The VSCode extension "Live Server" (personal recommendation)
+  - Alternatively, install the npm package "live-server":
+    - Navigate to the top directory
+    - Run **npm install -g live-server** in the terminal
+    - Run **live-server** in the terminal
 
-  The width of the _buy_ button changes on hover over a specified time.
+## License
 
-- **Transform**
+If you have any questions, ideas, or concerns, feel free to contact me at the email listed on my GitHub profile.
 
-  **translateX** is used to adjust the position of the color block.
-
-- **Pseudo-element**
-
-  **::after** is used to display a color bar.
-  The pseudo-element contains a linear-gradient example as well.
-
-## JavaScript
-
-This code allows a mobile user to toggle the navigation menu at the top of the page open/close. This only happens when the viewport width is less than 700px. Above 700px, the menu icon is hidden with CSS and the menu options display inline at the top of the navigation bar.
-
-## Sources
-
-Icons are from Google Icons.
-Images are copyright-free.
+MIT © 2022 Sidney Hopkins
