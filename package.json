@@ -1,0 +1,19 @@
+{
+  "name": "responsive-design-moon",
+  "version": "1.0.0",
+  "description": "HTML, CSS, JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidneyhopkins/responsive-design-moon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidneyhopkins/responsive-design-moon/issues"
+  },
+  "homepage": "https://github.com/sidneyhopkins/responsive-design-moon#readme"
+}
